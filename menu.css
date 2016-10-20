@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Philosopher');
+
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Add Animation*/
+
+@keyframes fade {
+    from {
+        background-color: #199CFF;
+    }
+    to {
+        background-color: #62737F;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        color: #ff0000;
+    }
+    10% {
+        color: #ff8000;
+    }
+    20% {
+        color: #ffff00;
+    }
+    30% {
+        color: #80ff00;
+    }
+    40% {
+        color: #00ff00;
+    }
+    50% {
+        color: #00ff80;
+    }
+    60% {
+        color: #00ffff;
+    }
+    70% {
+        color: #0080ff;
+    }
+    80% {
+        color: #0000ff;
+    }
+    90% {
+        color: #8000ff;
+    }
+    100% {
+        color: #ff0080;
+    }
+}
+
+@keyframes rainbowB {
+    0% {
+        background-color: #62737F;
+    }
+    25% {
+        background-color: #0C4E7F;
+    }
+    50% {
+        background-color: #147DCC;
+    }
+    75% {
+        background-color: #199CFF;
+    }
+    100% {
+        background-color: #65BDFF;
+    }
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: 'Philosopher',helvetica, arial, sans-serif;
+}
+
+html,
+body {
+    background-color: #62737F;
+}
+
+h1 {
+    color: #0C4E7F;
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #0C4E7F;
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    padding: 1rem 2rem;
+    text-align:center;
+}
+
+nav li {
+    font-size: 2.618rem;
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+}
+
+p {
+    font-family: 'Philosopher', Helvetica, Arial, sans-serif;
+    color: #0C4E7F;
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+}
+
+.wrapper {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    background-color: #65BDFF;
+    color: rebeccapurple;
+}
+
+header {
+    background-color: #65BDFF;
+}
+
+.menu-h {
+    width: 100%;
+}
+
+
+/************************Horizontal Menu*************************/
+
+.menu-h li {
+    border-bottom: 2px solid #0C4E7F;
+    border-top: 2px solid #0C4E7F;
+    background-color: #199CFF;
+    float: left;
+    width: 20%;
+    text-align: center;
+    list-style: none;
+    /*        border: 1px solid black;*/
+    /* style the list items to remove the bullets 
+        and line up horizontally
+        and take up 20% of the width of the ul */
+}
+
+.menu-h li:hover {
+    border-left: 2px solid #0C4E7F;
+    border-right: 2px solid #0C4E7F;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.menu-h a,
+.menu-h a:link,
+.menu-h a:visited {
+    text-decoration: none;
+    color: #0C4E7F;
+    /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+}
+
+.menu-h a:hover,
+.menu-h a:active {
+    color: white;
+}
+
+
+/********************Verticle Menu*************************/
+
+.menu-v {
+    text-align: center;
+    width: 20%;
+    float: left;
+    padding: 20px 0px 0px 20px;
+    /*    visibility: hidden;*/
+}
+
+.menu-v li:hover {
+    animation: rainbowB;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.menu-v li {
+    margin-bottom: 3px;
+    border: 2px solid #0C4E7F;
+    background-color: #199CFF;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    /* style the list items to remove the bullets 
+        and line up vertically
+        and take up 100% of the width of the ul */
+}
+
+.menu-v a,
+.menu-v a:link,
+.menu-v a:visited {
+    /* style the anchors to fill the entire width of the li */
+    text-decoration: none;
+    color: #0C4E7F;
+}
+
+.menu-v a:hover,
+.menu-v a:active {
+    color: white;
+    /*
+             animation: rainbow;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+*/
+}
+
+
+/****************************************end of menu*****************************************/
+
+main {
+    width: 80%;
+    float: right;
+    padding-left:
+}
+
+footer {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    border-top: 2px solid #0C4E7F;
+    clear: both;
+    text-align: right;
+}
